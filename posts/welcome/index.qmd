@@ -15,3 +15,22 @@ To explore this problem, Zachreson et al. (2022) utilised two epidemiological si
 
 ## Higher transmissibility requires higher vaccination efficacy
 When a virus becomes more contagious (measured by its $R_0$ value), the risk associated with a quarantine breach leading to further transmission increases significantly. The analysis shows that quarantine protocols calibrated for earlier, less transmissible strains may be insufficient for variants like Delta unless paired with more population vaccination.
+
+```{r}
+#| echo: false
+#| label: tbl-ve-r0-offset
+#| tbl-cap: "Required vaccine efficacy (VE) to maintain baseline quarantine breach risk across varying viral transmissibility values ($R_0$). As viral transmissiblity increases, maintaining baseline quarantine safety requires a non-linear increase in vaccine efficacy. Source: Adapted from Zachreson et al. (2022)."
+library(knitr)
+library(tibble)
+library(kableExtra)
+
+table_data <- tibble(
+    "Viral Variant Scenario" = c("Pre-Delta Baseline", "Delta Variant", "High Transmissibility", "Extreme Scenario"),
+    "Transmissibility Level ($R_0$)" = c("$R_0$ = 3", "$R_0$ ≈ 6", "$R_0$ = 8", "$R_0$ = 10"),
+    "Required Vaccine Efficacy (VE)" = c("Baseline (0% VE equivalent)", "≈ 60%", "≈ 70%", "70% - 80%")
+)
+
+table_data |>
+    kable()
+
+```
