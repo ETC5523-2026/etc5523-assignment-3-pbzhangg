@@ -12,3 +12,6 @@ The emergence of the Delta variant intensified this challenge. Even when infecte
 
 # Analysis
 To explore this problem, Zachreson et al. (2022) utilised two epidemiological simulation models to investigate how vaccination affects border quarantine and the risk of community outbreaks. An individual-based model simulated travellers passing through a 14-day quarantine system, while a branching-process model estimated how quarantine breaches could translate into community outbreaks. The researchers worked with varying levels of viral transmissiblity, vaccine efficacy and vaccination coverage to assess how these factors influenced the modelled outcomes.
+
+## Higher transmissibility requires higher vaccination efficacy
+When a virus becomes more contagious (measured by its $R_0$ value), the risk associated with a quarantine breach leading to further transmission increases significantly. The analysis shows that quarantine protocols calibrated for earlier, less transmissible strains may be insufficient for variants like Delta unless paired with more population vaccination.
