@@ -38,3 +38,56 @@ table_data |>
 @tbl-ve-r0-offset summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number ($R_0$), a measure of how readily a virus spreads in a susceptible population, increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At $R_0 = 8$, this rises to around 80%, and at $R_0 = 10$, approximately 70-80% efficacy is required.
 
 These findings suggest that vaccine efficacy becomes increasingly important as viral transmissibility rises. However, the estimates are specific to the scenarios modelled and should not be interpreted as universal thresholds for safe quarantine.
+
+## Community vaccination can delay outbreaks
+Quarantine systems cannot eliminate every possiblity of an infection reaching the community. Therefore, immunity of the broader community can act as an additional layer of protection by reducing the likelihood that an escaped infection will lead to a community outbreak.
+```{r}
+#| echo: false
+#| message: false
+#| label: fig-outbreak-prob
+#| fig-cap: "Expected time for community outbreak probability to reach 50% ($t_{50}$) across different levels of population vaccination coverage, vaccine effectiveness, and viral transmissibility ($R_0$) values. High community coverage acts as a protective buffer, extending the timeline from just 15 days to over 1000 days. Source: Adapted from Zachreson et al. (2022)."
+library(tidyverse)
+fig4_data <- read_csv("data/fig4.csv")
+
+fig4_data <- fig4_data |>
+  rename(VE = `vaccine efficacy`,
+         coverage = `vaccination coverage`,
+         t50 = `t50_days_estimated`) |>
+  mutate(VE = VE * 100,
+         coverage = coverage * 100,
+         VE = factor(VE),
+         R0 = paste0("R[0] == ", R0),
+         R0 = factor(R0, levels = c("R[0] == 5", "R[0] == 6", "R[0] == 7", "R[0] == 8", "R[0] == 9", "R[0] == 10"))
+         )
+
+ggplot(fig4_data, aes(x = coverage, y = t50, colour = factor(VE), group = VE)) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 2) +
+  facet_wrap(
+    ~R0,
+    labeller = label_parsed,
+    nrow = 2
+  ) +
+  scale_x_continuous(
+    limits = c(10, 100),
+    breaks = seq(20, 100, by = 20)
+  ) +
+  scale_y_log10(breaks = c(10, 100, 1000, 10000)) +
+  scale_colour_brewer(
+    palette = "Dark2",
+    name = "Vaccine efficacy",
+    labels = c("50%", "60%", "70%", "80%", "90%")
+  ) +
+  labs(title = "Higher population vaccination coverage delays community outbreaks",
+       x = "Population vaccination coverage (%)",
+       y = expression(paste("Time for outbreak probability to reach 50%, ", italic(t)[50], " (days)"))
+       ) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(face = "bold", size = 14, hjust = 0),
+        strip.text = element_text(face = "bold"),
+        legend.position = "bottom",
+        panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_line(linewidth = 0.5),
+        panel.grid.major.x = element_line(linewidth = 0.3))
+
+```
