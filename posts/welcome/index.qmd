@@ -10,6 +10,5 @@ During the COVID-19 pandemic, border quarantine strategies helped countries with
 
 The emergence of the Delta variant intensified this challenge. Even when infected travellers were isolated and tested, infections could still escape into the wider community. Understanding this risk was important for evaluating how border control and vaccination strategies could work together to prevent community outbreaks.
 
-Zachreson et al. (2022) used computer models to investigate two questions: how vaccine efficacy affects transmission risk within a border quarantine system, and how vaccination across the wider community influences outbreaks following a quarantine breach. By varying levels of viral transmissibility, vaccine efficacy and community vaccination coverage, they explored how these factors altered the risk of transmission and the timing of community outbreaks.
-
-
+# Analysis
+To explore this problem, Zachreson et al. (2022) utilised two epidemiological simulation models to investigate how vaccination affects border quarantine and the risk of community outbreaks. An individual-based model simulated travellers passing through a 14-day quarantine system, while a branching-process model estimated how quarantine breaches could translate into community outbreaks. The researchers worked with varying levels of viral transmissiblity, vaccine efficacy and vaccination coverage to assess how these factors influenced the modelled outcomes.
