@@ -5,8 +5,11 @@ date: "2022-07-18"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+# Problem description
+During the COVID-19 pandemic, border quarantine strategies helped countries with low levels of community transmission and limited population immunity such as Australia and New Zealand control the transmission of the virus by limiting the introduction of infections into communities. But what happens when a new variant spreads more easily than the virus that the quarantine system was designed to contain?
 
-![](thumbnail.jpg)
+The emergence of the Delta variant intensified this challenge. Even when infected travellers were isolated and tested, infections could still escape into the wider community. Understanding this risk was important for evaluating how border control and vaccination strategies could work together to prevent community outbreaks.
+
+Zachreson et al. (2022) used computer models to investigate two questions: how vaccine efficacy affects transmission risk within a border quarantine system, and how vaccination across the wider community influences outbreaks following a quarantine breach. By varying levels of viral transmissibility, vaccine efficacy and community vaccination coverage, they explored how these factors altered the risk of transmission and the timing of community outbreaks.
 
 
