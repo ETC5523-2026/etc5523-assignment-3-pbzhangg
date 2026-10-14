@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a Master of Business Analytics student at Monash University, with a background in Data Science from the University of Canterbury.\nThroughout my studies and experiences, I have developed an interest in combining analytical skills with curiosity, collaboration, and empathy to develop practical solutions to complex problems. I am interested in using data to uncover insights, understand real-world challenges, and support data-driven decision-making.\nI am motivated by opportunities that connect diverse perspectives, uncover insights, and transform ideas into actionable outcomes. Through my experience with data analysis, statistical modelling, and data visualisation using R and Python, I enjoy exploring how analytical techniques can be applied to practical challenges.\nI aspire to build a career where I can leverage data, creativity, and empathy to create innovative solutions that deliver value for organisations and the communities they support."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "The Limits of Border Quarantine and the Power of Community Immunity",
+    "section": "",
+    "text": "During the COVID-19 pandemic, border quarantine strategies helped countries with low levels of community transmission and limited population immunity such as Australia and New Zealand control the transmission of the virus by limiting the introduction of infections into communities. But what happens when a new variant spreads more easily than the virus that the quarantine system was designed to contain?\nThe emergence of the Delta variant intensified this challenge. Even when infected travellers were isolated and tested, infections could still escape into the wider community. Understanding this risk was important for evaluating how border control and vaccination strategies could work together to prevent community outbreaks."
+  },
+  {
+    "objectID": "posts/welcome/index.html#higher-transmissibility-requires-higher-vaccination-efficacy",
+    "href": "posts/welcome/index.html#higher-transmissibility-requires-higher-vaccination-efficacy",
+    "title": "The Limits of Border Quarantine and the Power of Community Immunity",
+    "section": "Higher transmissibility requires higher vaccination efficacy",
+    "text": "Higher transmissibility requires higher vaccination efficacy\nWhen a virus becomes more contagious (measured by its \\(R_0\\) value), the risk associated with a quarantine breach leading to further transmission increases significantly. The analysis shows that quarantine protocols calibrated for earlier, less transmissible strains may be insufficient for variants like Delta unless paired with more population vaccination.\n\n\n\n\nTable 1: Required vaccine efficacy (VE) to maintain baseline quarantine breach risk across varying viral transmissibility values (\\(R_0\\)). As viral transmissiblity increases, maintaining baseline quarantine safety requires a non-linear increase in vaccine efficacy. Source: Adapted from Zachreson et al. (2022).\n\n\n\n\n\n\n\n\n\n\n\nViral Variant Scenario\nTransmissibility Level (\\(R_0\\))\nRequired Vaccine Efficacy (VE)\n\n\n\n\nPre-Delta Baseline\n\\(R_0\\) = 3\nBaseline (0% VE equivalent)\n\n\nDelta Variant\n\\(R_0\\) ≈ 6\n≈ 60%\n\n\nHigh Transmissibility\n\\(R_0\\) = 8\n≈ 70%\n\n\nExtreme Scenario\n\\(R_0\\) = 10\n70% - 80%\n\n\n\n\n\n\n\n\nTable 1 summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number (\\(R_0\\)), a measure of how readily a virus spreads in a susceptible population, increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At \\(R_0 = 8\\), this rises to around 80%, and at \\(R_0 = 10\\), approximately 70-80% efficacy is required.\nThese findings suggest that vaccine efficacy becomes increasingly important as viral transmissibility rises. However, the estimates are specific to the scenarios modelled and should not be interpreted as universal thresholds for safe quarantine."
+  },
+  {
+    "objectID": "posts/welcome/index.html#community-vaccination-can-delay-outbreaks",
+    "href": "posts/welcome/index.html#community-vaccination-can-delay-outbreaks",
+    "title": "The Limits of Border Quarantine and the Power of Community Immunity",
+    "section": "Community vaccination can delay outbreaks",
+    "text": "Community vaccination can delay outbreaks\nQuarantine systems cannot eliminate every possiblity of an infection reaching the community. Therefore, immunity of the broader community can act as an additional layer of protection by reducing the likelihood that an escaped infection will lead to a community outbreak.\n\n\n\n\n\n\n\n\nFigure 1: Expected time for community outbreak probability to reach 50% (\\(t_{50}\\)) across different levels of population vaccination coverage, vaccine effectiveness, and viral transmissibility (\\(R_0\\)) values. High community coverage acts as a protective buffer, extending the timeline from just 15 days to over 1000 days. Source: Adapted from Zachreson et al. (2022).\n\n\n\n\n\nFigure 1 depicts the modelled time required for the probability of at least one community outbreak (cases \\(\\ge 5\\)) to reach 50%, denoted by \\(t_{50}\\), under different combinations of viral transmissibility, vaccine efficacy and vaccination coverage. In the baseline scenario, the time is approximately 15 days. Under some scenarios combining high vaccine efficacy with high community vaccination coverage, it increases to around 1000 days.\nFigure 1 also shows that the benefit of greater coverage depends on vaccine efficacy and viral transmissibility. This means that vaccination coverage and vaccine efficacy should be considered together when assessing how well a community may withstand a quarantine breach."
+  },
+  {
+    "objectID": "posts/welcome/index.html#summary",
+    "href": "posts/welcome/index.html#summary",
+    "title": "The Limits of Border Quarantine and the Power of Community Immunity",
+    "section": "Summary",
+    "text": "Summary\nTaken together, the findings suggest that quarantine-related protection and community-wide vaccination play complementary roles. The former reduces transmission risk associated with imported infections, while the latter can delay outbreaks if infections reach the wider population."
+  },
+  {
+    "objectID": "posts/welcome/index.html#limitations",
+    "href": "posts/welcome/index.html#limitations",
+    "title": "The Limits of Border Quarantine and the Power of Community Immunity",
+    "section": "Limitations",
+    "text": "Limitations\nThe results are model-based estimates, not guarantees of real-world outcomes. They depend on assumptions about viral transmissibiliy, vaccine efficacy and quarantine procedures, so actual outbreas may differ from the modelled scenarios. The results help illustrate how vaccination and quarantine can work together, but they do not identify a single best policy for every setting."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
+    "section": "",
+    "text": "The Limits of Border Quarantine and the Power of Community Immunity\n\n\n\nPublic Health\n\n\n\n\n\n\n\n\n\nOct 14, 2026\n\n\nPhoebe Zhang\n\n\n\n\n\nNo matching items"
+  }
+]

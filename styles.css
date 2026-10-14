@@ -1,0 +1,76 @@
+/* css styles */
+.navbar-dark, .quarto-title-banner {
+  background-color: #FFFFFF;
+  padding-bottom: 0;
+}
+
+.navbar, .navbar-expand-lg {
+  background-color: #365087;
+}
+
+.navbar .navbar-title, 
+.navbar .menu-text,
+.navbar .bi-github {
+  color: #f0f8ff;
+}
+
+.navbar-toggler-icon, .aa-SubmitIcon {
+  filter: brightness(0) saturate(100%) 
+          invert(98%) sepia(5%) saturate(500%) 
+          hue-rotate(175deg) brightness(97%);
+}
+
+
+.quarto-title-banner, .title {
+  color:#2c406b !important;
+}
+
+h1, h2 {
+  color: #385289;
+}
+
+body {
+  color: #293444fc;
+}
+
+a {
+  color: #457ee2;
+}
+
+a:hover {
+  color: #1351cc;
+}
+
+.about-link {
+  border-color: #293444fc !important;
+}
+
+.about-link i,
+.about-link svg,
+.about-link span,
+.about-link .bi-github {
+  color: #293444fc !important;
+  fill: #293444fc !important;
+}
+
+.about-link:hover {
+  border-color: #457ee2 !important;
+}
+
+.about-link:hover i,
+.about-link:hover svg,
+.about-link:hover span,
+.about-link:hover .bi-github {
+  color: #457ee2 !important;
+  fill: #457ee2 !important;
+}
+
+#TOC .active {
+  color: #457ee2 !important;
+  font-weight: 600;
+  border-left-color: #457ee2 !important; 
+}
+
+#TOC a:hover {
+  color: #457ee2 !important;
+}
