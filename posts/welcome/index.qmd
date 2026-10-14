@@ -98,3 +98,6 @@ ggplot(fig4_data, aes(x = coverage, y = t50, colour = factor(VE), group = VE)) +
 
 ## Summary
 Taken together, the findings suggest that quarantine-related protection and community-wide vaccination play complementary roles. The former reduces transmission risk associated with imported infections, while the latter can delay outbreaks if infections reach the wider population.
+
+## Limitations
+The results are model-based estimates, not guarantees of real-world outcomes. They depend on assumptions about viral transmissibiliy, vaccine efficacy and quarantine procedures, so actual outbreas may differ from the modelled scenarios. The results help illustrate how vaccination and quarantine can work together, but they do not identify a single best policy for every setting.
