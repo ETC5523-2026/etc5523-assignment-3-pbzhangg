@@ -101,3 +101,11 @@ Taken together, the findings suggest that quarantine-related protection and comm
 
 ## Limitations
 The results are model-based estimates, not guarantees of real-world outcomes. They depend on assumptions about viral transmissibiliy, vaccine efficacy and quarantine procedures, so actual outbreas may differ from the modelled scenarios. The results help illustrate how vaccination and quarantine can work together, but they do not identify a single best policy for every setting.
+
+# Conclusion
+The modelling by Zachreson et al. (2022) suggests that more transmissible variants increase the challenges of controlling infections through border quarantine alone. Higher vaccine efficacy can offset some of this additional transmission risk, while greater vaccination coverage across the wider community can delay outbreaks if infections escape quarantine.
+
+These findings highlight the complementary roles of border controls and community vaccination in pandemic preparedness. Although quarantine can reduce the risk of imported infections spreading, community vaccination provides an additional layer of protection when containment fails. While the modelled results cannot predict every real-world outcome, they offer useful insights into how strategies can work together to reduce outbreak risk.
+
+# References
+Zachreson, C., Shearer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., & Geard, N. (2022). COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science Advances, 8(14), eabm3624. [https://doi.org/10.1126/sciadv.abm3624](https://doi.org/10.1126/sciadv.abm3624)
