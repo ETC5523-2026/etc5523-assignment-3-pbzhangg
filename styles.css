@@ -1,6 +1,7 @@
 /* css styles */
 .navbar-dark, .quarto-title-banner {
   background-color: #FFFFFF;
+  padding-bottom: 0;
 }
 
 .navbar, .navbar-expand-lg {
@@ -62,4 +63,14 @@ a:hover {
 .about-link:hover .bi-github {
   color: #457ee2 !important;
   fill: #457ee2 !important;
+}
+
+#TOC .active {
+  color: #457ee2 !important;
+  font-weight: 600;
+  border-left-color: #457ee2 !important; 
+}
+
+#TOC a:hover {
+  color: #457ee2 !important;
 }
