@@ -91,3 +91,10 @@ ggplot(fig4_data, aes(x = coverage, y = t50, colour = factor(VE), group = VE)) +
         panel.grid.major.x = element_line(linewidth = 0.3))
 
 ```
+
+@fig-outbreak-prob depicts the modelled time required for the probability of at least one community outbreak (cases $\ge 5$) to reach 50%, denoted by $t_{50}$, under different combinations of viral transmissibility, vaccine efficacy and vaccination coverage. In the baseline scenario, the time is approximately 15 days. Under some scenarios combining high vaccine efficacy with high community vaccination coverage, it increases to around 1000 days.
+
+@fig-outbreak-prob also shows that the benefit of greater coverage depends on vaccine efficacy and viral transmissibility. This means that vaccination coverage and vaccine efficacy should be considered together when assessing how well a community may withstand a quarantine breach.
+
+## Summary
+Taken together, the findings suggest that quarantine-related protection and community-wide vaccination play complementary roles. The former reduces transmission risk associated with imported infections, while the latter can delay outbreaks if infections reach the wider population.
