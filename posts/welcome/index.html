@@ -182,7 +182,7 @@ window.Quarto = {
   <li><a href="#problem-description" id="toc-problem-description" class="nav-link active" data-scroll-target="#problem-description">Problem description</a></li>
   <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a>
   <ul class="collapse">
-  <li><a href="#higher-transmissibility-requires-higher-vaccination-efficacy" id="toc-higher-transmissibility-requires-higher-vaccination-efficacy" class="nav-link" data-scroll-target="#higher-transmissibility-requires-higher-vaccination-efficacy">Higher transmissibility requires higher vaccination efficacy</a></li>
+  <li><a href="#higher-transmissibility-requires-higher-vaccine-efficacy" id="toc-higher-transmissibility-requires-higher-vaccine-efficacy" class="nav-link" data-scroll-target="#higher-transmissibility-requires-higher-vaccine-efficacy">Higher transmissibility requires higher vaccine efficacy</a></li>
   <li><a href="#community-vaccination-can-delay-outbreaks" id="toc-community-vaccination-can-delay-outbreaks" class="nav-link" data-scroll-target="#community-vaccination-can-delay-outbreaks">Community vaccination can delay outbreaks</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
@@ -206,15 +206,16 @@ window.Quarto = {
 </section>
 <section id="analysis" class="level1">
 <h1>Analysis</h1>
-<p>To explore this problem, Zachreson et al.&nbsp;(2022) utilised two epidemiological simulation models to investigate how vaccination affects border quarantine and the risk of community outbreaks. An individual-based model simulated travellers passing through a 14-day quarantine system, while a branching-process model estimated how quarantine breaches could translate into community outbreaks. The researchers worked with varying levels of viral transmissiblity, vaccine efficacy and vaccination coverage to assess how these factors influenced the modelled outcomes.</p>
-<section id="higher-transmissibility-requires-higher-vaccination-efficacy" class="level2">
-<h2 class="anchored" data-anchor-id="higher-transmissibility-requires-higher-vaccination-efficacy">Higher transmissibility requires higher vaccination efficacy</h2>
-<p>When a virus becomes more contagious (measured by its <span class="math inline">\(R_0\)</span> value), the risk associated with a quarantine breach leading to further transmission increases significantly. The analysis shows that quarantine protocols calibrated for earlier, less transmissible strains may be insufficient for variants like Delta unless paired with more population vaccination.</p>
+<p>To explore this problem, Zachreson et al.&nbsp;(2022) utilised two epidemiological simulation models to investigate how vaccination affects border quarantine and the risk of community outbreaks. An individual-based model simulated travellers passing through a 14-day quarantine system, while a branching-process model estimated how quarantine breaches could translate into community outbreaks.</p>
+<p>The researchers examined three main factors: viral transmissibility, vaccine efficacy and vaccination coverage across the wider community. Viral transmissibility was represented by the basic reproduction number, <span class="math inline">\(R_0\)</span>, which describes the average number of secondary infections caused by one infected person in a fully susceptible population under specified conditions. A higher <span class="math inline">\(R_0\)</span> indicates greater transmission potential. Vaccine efficacy describes how much a vaccine reduces a specified outcome, such as infection or transmission, compared with no vaccination under the modelled conditions. Vaccination coverage refers to the percentage of the population that has been vaccinated. Together, these factors help explain how vaccination may reduce transmission risk associated with quarantine and influence outbreaks if infections escape into the wider community.</p>
+<section id="higher-transmissibility-requires-higher-vaccine-efficacy" class="level2">
+<h2 class="anchored" data-anchor-id="higher-transmissibility-requires-higher-vaccine-efficacy">Higher transmissibility requires higher vaccine efficacy</h2>
+<p>When a virus becomes more contagious, the risk of further transmission following a quarantine breach increases significantly. The analysis shows that quarantine protocols calibrated for earlier, less transmissible strains may be insufficient for variants such as Delta unless paired with higher population vaccination coverage.</p>
 <div class="cell">
 <div id="tbl-ve-r0-offset" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ve-r0-offset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Required vaccine efficacy (VE) to maintain baseline quarantine breach risk across varying viral transmissibility values (<span class="math inline">\(R_0\)</span>). As viral transmissiblity increases, maintaining baseline quarantine safety requires a non-linear increase in vaccine efficacy. Source: Adapted from Zachreson et al.&nbsp;(2022).
+Table&nbsp;1: Approximate vaccine efficacy (VE) required to maintain comparable modelled quarantine-related transmission risk at varying levels of viral transmissibility (<span class="math inline">\(R_0\)</span>). The model suggests that higher transmissibility requires greater vaccine efficacy to offset the additional risk. Source: Adapted from Zachreson et al.&nbsp;(2022).
 </figcaption>
 <div aria-describedby="tbl-ve-r0-offset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -250,7 +251,7 @@ Table&nbsp;1: Required vaccine efficacy (VE) to maintain baseline quarantine bre
 <tr class="even">
 <td style="text-align: left;">Extreme Scenario</td>
 <td style="text-align: left;"><span class="math inline">\(R_0\)</span> = 10</td>
-<td style="text-align: left;">70% - 80%</td>
+<td style="text-align: left;">70%–80%</td>
 </tr>
 </tbody>
 </table>
@@ -259,12 +260,12 @@ Table&nbsp;1: Required vaccine efficacy (VE) to maintain baseline quarantine bre
 </figure>
 </div>
 </div>
-<p><a href="#tbl-ve-r0-offset" class="quarto-xref">Table&nbsp;1</a> summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number (<span class="math inline">\(R_0\)</span>), a measure of how readily a virus spreads in a susceptible population, increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At <span class="math inline">\(R_0 = 8\)</span>, this rises to around 70%, and at <span class="math inline">\(R_0 = 10\)</span>, approximately 70-80% efficacy is required.</p>
+<p><a href="#tbl-ve-r0-offset" class="quarto-xref">Table&nbsp;1</a> summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number (<span class="math inline">\(R_0\)</span>) increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At <span class="math inline">\(R_0 = 8\)</span>, this rises to around 70%, and at <span class="math inline">\(R_0 = 10\)</span>, approximately 70%–80% efficacy is required.</p>
 <p>These findings suggest that vaccine efficacy becomes increasingly important as viral transmissibility rises. However, the estimates are specific to the scenarios modelled and should not be interpreted as universal thresholds for safe quarantine.</p>
 </section>
 <section id="community-vaccination-can-delay-outbreaks" class="level2">
 <h2 class="anchored" data-anchor-id="community-vaccination-can-delay-outbreaks">Community vaccination can delay outbreaks</h2>
-<p>Quarantine systems cannot eliminate every possiblity of an infection reaching the community. Therefore, immunity of the broader community can act as an additional layer of protection by reducing the likelihood that an escaped infection will lead to a community outbreak.</p>
+<p>Quarantine systems cannot eliminate every possibility of an infection reaching the community. Therefore, immunity within the broader community can act as an additional layer of protection by reducing the likelihood that an escaped infection will lead to a community outbreak.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-outbreak-prob" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -273,22 +274,22 @@ Table&nbsp;1: Required vaccine efficacy (VE) to maintain baseline quarantine bre
 <img src="index_files/figure-html/fig-outbreak-prob-1.png" class="img-fluid figure-img" width="672">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-outbreak-prob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Expected time for community outbreak probability to reach 50% (<span class="math inline">\(t_{50}\)</span>) across different levels of population vaccination coverage, vaccine effectiveness, and viral transmissibility (<span class="math inline">\(R_0\)</span>) values. High community coverage acts as a protective buffer, extending the timeline from just 15 days to over 1000 days. Source: Adapted from Zachreson et al.&nbsp;(2022).
+Figure&nbsp;1: Modelled time until the probability of a community outbreak reaches 50% (<span class="math inline">\(t_{50}\)</span>), across different levels of vaccination coverage, vaccine efficacy, and viral transmissibility (<span class="math inline">\(R_0\)</span>). In some scenarios, high vaccination coverage combined with high vaccine efficacy substantially delays the modelled outbreak timeline from approximately 15 days to over 1000 days. Source: Adapted from Zachreson et al.&nbsp;(2022).
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p><a href="#fig-outbreak-prob" class="quarto-xref">Figure&nbsp;1</a> depicts the modelled time required for the probability of at least one community outbreak (cases <span class="math inline">\(\ge 5\)</span>) to reach 50%, denoted by <span class="math inline">\(t_{50}\)</span>, under different combinations of viral transmissibility, vaccine efficacy and vaccination coverage. In the baseline scenario, the time is approximately 15 days. Under some scenarios combining high vaccine efficacy with high community vaccination coverage, it increases to around 1000 days.</p>
+<p><a href="#fig-outbreak-prob" class="quarto-xref">Figure&nbsp;1</a> depicts the modelled time until the probability of at least one community outbreak (five or more cases) reaches 50%, denoted by <span class="math inline">\(t_{50}\)</span>, under different combinations of viral transmissibility, vaccine efficacy and vaccination coverage. In the baseline scenario, this time is approximately 15 days. Under some scenarios combining high vaccine efficacy with high community vaccination coverage, it increases to around 1000 days. This illustrates how community vaccination can substantially delay outbreaks.</p>
 <p><a href="#fig-outbreak-prob" class="quarto-xref">Figure&nbsp;1</a> also shows that the benefit of greater coverage depends on vaccine efficacy and viral transmissibility. This means that vaccination coverage and vaccine efficacy should be considered together when assessing how well a community may withstand a quarantine breach.</p>
 </section>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>Taken together, the findings suggest that quarantine-related protection and community-wide vaccination play complementary roles. The former reduces transmission risk associated with imported infections, while the latter can delay outbreaks if infections reach the wider population.</p>
+<p>Taken together, the findings suggest that quarantine-related protection and community-wide vaccination play complementary roles. Quarantine strategies reduce the risk of transmission from imported infections, while community vaccination can delay outbreaks if infections reach the wider population.</p>
 </section>
 <section id="limitations" class="level2">
 <h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
-<p>The results are model-based estimates, not guarantees of real-world outcomes. They depend on assumptions about viral transmissibiliy, vaccine efficacy and quarantine procedures, so actual outbreas may differ from the modelled scenarios. The results help illustrate how vaccination and quarantine can work together, but they do not identify a single best policy for every setting.</p>
+<p>The results are model-based estimates, not guarantees of real-world outcomes. They depend on assumptions about viral transmissibility, vaccine efficacy and quarantine procedures, so actual outbreaks may differ from the modelled scenarios. The results help illustrate how vaccination and quarantine can work together, but they do not identify a single best policy for every setting.</p>
 </section>
 </section>
 <section id="conclusion" class="level1">
@@ -298,7 +299,7 @@ Figure&nbsp;1: Expected time for community outbreak probability to reach 50% (<s
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
-<p>Zachreson, C., Shearer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., &amp; Geard, N. (2022). COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science Advances, 8(14), eabm3624. <a href="https://doi.org/10.1126/sciadv.abm3624">https://doi.org/10.1126/sciadv.abm3624</a></p>
+<p>Zachreson, C., Shearer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., &amp; Geard, N. (2022). COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. <em>Science Advances</em>, <em>8</em>(14), eabm3624. <a href="https://doi.org/10.1126/sciadv.abm3624">https://doi.org/10.1126/sciadv.abm3624</a></p>
 
 
 </section>
