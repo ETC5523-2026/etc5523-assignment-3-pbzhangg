@@ -1,8 +1,8 @@
 ---
-title: "Welcome To My Blog Template"
-author: "Emi Tanaka"
-date: "2022-07-18"
-categories: [news]
+title: "The Limits of Border Quarantine and the Power of Community Immunity"
+author: "Phoebe Zhang"
+date: "2026-10-14"
+categories: [Public Health]
 ---
 
 # Problem description
