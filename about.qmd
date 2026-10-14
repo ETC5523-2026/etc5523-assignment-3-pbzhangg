@@ -1,13 +1,19 @@
 ---
 title: "About"
-image: profile.jpg
+image: profile-image.JPG
 about:
   template: jolla
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
+      href: https://github.com/pbzhangg
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+I am a Master of Business Analytics student at Monash University, with a background in Data Science from the University of Canterbury.
+
+Throughout my studies and experiences, I have developed an interest in combining analytical skills with curiosity, collaboration, and empathy to develop practical solutions to complex problems. I am interested in using data to uncover insights, understand real-world challenges, and support data-driven decision-making.
+
+I am motivated by opportunities that connect diverse perspectives, uncover insights, and transform ideas into actionable outcomes. Through my experience with data analysis, statistical modelling, and data visualisation using R and Python, I enjoy exploring how analytical techniques can be applied to practical challenges. 
+
+I aspire to build a career where I can leverage data, creativity, and empathy to create innovative solutions that deliver value for organisations and the communities they support.
