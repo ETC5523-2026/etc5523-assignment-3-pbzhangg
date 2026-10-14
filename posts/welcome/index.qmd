@@ -36,7 +36,7 @@ table_data |>
 
 ```
 
-@tbl-ve-r0-offset summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number ($R_0$), a measure of how readily a virus spreads in a susceptible population, increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At $R_0 = 8$, this rises to around 80%, and at $R_0 = 10$, approximately 70-80% efficacy is required.
+@tbl-ve-r0-offset summarises the approximate vaccine efficacy required to maintain a similar level of quarantine-related transmission risk under different levels of viral transmissibility. For example, when the basic reproduction number ($R_0$), a measure of how readily a virus spreads in a susceptible population, increases from 3 to 6, the model suggests that approximately 60% vaccine efficacy is needed to maintain comparable risk. At $R_0 = 8$, this rises to around 70%, and at $R_0 = 10$, approximately 70-80% efficacy is required.
 
 These findings suggest that vaccine efficacy becomes increasingly important as viral transmissibility rises. However, the estimates are specific to the scenarios modelled and should not be interpreted as universal thresholds for safe quarantine.
 
